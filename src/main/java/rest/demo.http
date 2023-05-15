@@ -1,0 +1,230 @@
+GET http://localhost:8080/Holm_war_exploded/api/info
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "test123"
+}
+###
+GET http://localhost:8080/Holm_war_exploded/api/info/admin
+x-access-token:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiYWRtaW4iLCJleHAiOjE2NjcyOTYyMTAsImlhdCI6MTY2NzI5NDQxMCwiaXNzdWVyIjoic2VtZXN0ZXJzdGFydGNvZGUtZGF0MyIsInVzZXJuYW1lIjoiYWRtaW4ifQ.dlsMNiQc_OYU2HCa-WMzNImQ3qoNy2CGXEWAbXBQM3g"
+
+
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/recipe/create
+Content-Type: application/json
+
+{
+"title": "boller i karry",
+"description": "desc",
+"instructions": "inst",
+"userName": "user",
+"recipeIngredientDTOS": [
+{
+"ingredientId": "3",
+"name": "salt",
+"amount": "2",
+"unit": "stk"
+},
+  {
+    "ingredientId": "4",
+    "name": "banan",
+    "amount": "2",
+    "unit": "stk"
+  }
+
+],
+"reviewDTOS": []
+}
+
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/recipe/create
+Content-Type: application/json
+
+{
+  "title": "boller i karry",
+  "description": "desc",
+  "instructions": "inst",
+  "userName": "user",
+  "recipeIngredientDTOS": [
+    {
+      "ingredientId": "2",
+      "name": "tomat",
+      "amount": "2",
+      "unit": "stk"
+    },
+    {
+      "ingredientId": "1",
+      "name": "agurk",
+      "amount": "2",
+      "unit": "stk"
+    }
+  ],
+  "reviewDTOS": []
+}
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/ingredient/create
+Content-Type: application/json
+
+{
+  "name": "banan"
+}
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/recipe/all
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/recipe/1
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/ingredient/all
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/ingredient/1
+
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/recipe/myRecipes/admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### gør det i den her rækkefølge, hvis jeg ikke er på discord
+
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/ingredient/create
+Content-Type: application/json
+
+{
+  "name": "banan"
+}
+
+###
+POST http://localhost:8080/Holm_war_exploded/api/ingredient/create
+Content-Type: application/json
+
+{
+  "name": "agurk"
+}
+###
+POST http://localhost:8080/Holm_war_exploded/api/recipe/create
+Content-Type: application/json
+
+{
+  "title": "boller i karry",
+  "description": "desc",
+  "instructions": "inst",
+  "userName": "user",
+  "recipeIngredientDTOS": [
+    {
+      "ingredientId": "1",
+      "name": "banan",
+      "amount": "2",
+      "unit": "stk"
+    },
+    {
+      "ingredientId": "2",
+      "name": "agurk",
+      "amount": "2",
+      "unit": "stk"
+    }
+  ],
+  "reviewDTOS": []
+}
+###
+GET http://localhost:8080/Holm_war_exploded/api/ingredient/all
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/ingredient/1
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/recipe/all
+
+###
+GET http://localhost:8080/Holm_war_exploded/api/recipe/1
